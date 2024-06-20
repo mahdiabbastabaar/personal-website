@@ -9,7 +9,7 @@ const Profile = () => {
     title: "Software Engineer @ Digikala.com",
     bio: "I'm a 22 years old CE Student in Sharif University of Technology and also a Software Engineer in Digikala.",
     email: "abbastabaar.mahdi1381@gmail.com",
-    linkedin: "https://linkedin.com/in/mahdi-abbastabaar/",
+    linkedin: "https://linkedin.com/in/mahdi-abbastabaar",
     github: "https://github.com/mahdiabbastabaar",
     photo: "/profile-photo.jpg"
   };
@@ -35,9 +35,18 @@ const Profile = () => {
           <h2>{profile.title}</h2>
           <p className="bio">{profile.bio}</p>
           <div className="contact-info">
-            <p>Email: <a href={`mailto:${profile.email}`}>{profile.email}</a></p>
-            <p>LinkedIn: <a href={profile.linkedin} target="_blank" rel="noopener noreferrer">{profile.linkedin}</a></p>
-            <p>GitHub: <a href={profile.github} target="_blank" rel="noopener noreferrer">{profile.github}</a></p>
+            <p>
+              <img src="/email-icon.png" alt="Email" className="icon" />
+              <a href={`mailto:${profile.email}`}>Email</a>
+            </p>
+            <p>
+              <img src="/linkedin-icon.png" alt="LinkedIn" className="icon" />
+              <a href={profile.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </p>
+            <p>
+              <img src="/github-icon.png" alt="GitHub" className="icon" />
+              <a href={profile.github} target="_blank" rel="noopener noreferrer">Github</a>
+            </p>
           </div>
         </div>
       </div>

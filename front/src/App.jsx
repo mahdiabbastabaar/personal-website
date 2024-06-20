@@ -1,17 +1,19 @@
-import { useState } from 'react'
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Profile from './components/Profile';
+import Album from './components/Album';
+import NavBar from './components/NavBar';
 
-
-function App() {
-  // const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <>
-      <div className="App">
-      <Profile />
-      </div>
-    </>
-  )
-}
+    <Router>
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<Profile />} />
+        <Route path="/album" element={<Album />} />
+      </Routes>
+    </Router>
+  );
+};
 
-export default App
+export default App;

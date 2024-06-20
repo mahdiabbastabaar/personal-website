@@ -5,6 +5,10 @@
   text-align: center;
 }
 
+.main-content {
+  padding-top: 60px; /* Add some padding to ensure content doesn't overlap with the fixed navbar */
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
